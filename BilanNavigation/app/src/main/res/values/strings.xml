@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Navigation Liste</string>
+    <string name="app_titre">Liste des jeux Halo</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_form">ActivityForm</string>
+    <string name="title_activity__page_list">Activity_PageList</string>
+</resources>

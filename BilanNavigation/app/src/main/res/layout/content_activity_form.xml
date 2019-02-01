@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ActivityForm"
+    tools:showIn="@layout/activity_form">
+
+    <TextView
+        android:id="@+id/TV_titre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="176dp"
+        android:layout_marginBottom="61dp"
+        android:text="Formulaire"
+        android:textColor="@color/colorText"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/ET_Nom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/BT_Validé"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="161dp"
+        android:layout_marginTop="547dp"
+        android:layout_marginEnd="162dp"
+        android:layout_marginBottom="80dp"
+        android:text="Valider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/ET_Nom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="136dp"
+        android:layout_marginEnd="162dp"
+        android:layout_marginBottom="366dp"
+        android:ems="10"
+        android:hint="NOM"
+        android:inputType="textPersonName"
+        android:textColor="@color/colorText"
+        app:layout_constraintBottom_toTopOf="@+id/BT_Validé"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/ET_Prenom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="162dp"
+        android:layout_marginBottom="294dp"
+        android:ems="10"
+        android:hint="PRENOM"
+        android:inputType="textPersonName"
+        android:textColor="@color/colorText"
+        app:layout_constraintBottom_toTopOf="@+id/BT_Validé"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ET_Nom" />
+
+    <EditText
+        android:id="@+id/ET_Mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="162dp"
+        android:layout_marginBottom="222dp"
+        android:ems="10"
+        android:hint="MAIL"
+        android:inputType="textPersonName"
+        android:textColor="@color/colorText"
+        app:layout_constraintBottom_toTopOf="@+id/BT_Validé"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ET_Prenom" />
+
+    <EditText
+        android:id="@+id/ET_Pseudo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="162dp"
+        android:layout_marginBottom="150dp"
+        android:ems="10"
+        android:hint="PSEUDO"
+        android:inputType="textPersonName"
+        android:textColor="@color/colorText"
+        app:layout_constraintBottom_toTopOf="@+id/BT_Validé"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ET_Mail" />
+
+</android.support.constraint.ConstraintLayout>
