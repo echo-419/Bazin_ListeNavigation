@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
     private Button Bt_form;
     private TextView Psd;
+    private TextView titre;
 
 
     private final String EXTRA_User =  "";
@@ -39,7 +40,8 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         Bt_form=(Button)findViewById(R.id.BT_Log);
-        Psd=(TextView) findViewById(R.id.BT_Log);
+        Psd=(TextView) findViewById(R.id.TV_Pseudo);
+        titre=(TextView) findViewById(R.id.TV_Titre);
         monRecyclerView = (RecyclerView)findViewById(R.id.RV_Liste);
         monRecyclerView.setHasFixedSize(true);
 
@@ -138,6 +140,9 @@ public class MainActivity extends AppCompatActivity {
                 Psd.setText(user.getPseudo());
                 monRecyclerView = (RecyclerView)findViewById(R.id.RV_Liste);
                 monRecyclerView.setVisibility(View.VISIBLE);
+                titre.setVisibility(View.VISIBLE);
+
+                Bt_form.setVisibility(View.INVISIBLE);
 
             }
         }

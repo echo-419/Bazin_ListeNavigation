@@ -33,8 +33,8 @@ public class Activity_PageList extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        TextView txt=(TextView)findViewById(R.id.TV_TitrePage);
-        TextView titre=(TextView)findViewById(R.id.TV_Description);
+        TextView txt=(TextView)findViewById(R.id.TV_Description);
+        TextView titre=(TextView)findViewById(R.id.TV_TitrePage);
         ImageView img=(ImageView) findViewById(R.id.IV_img);
 
         Intent monIntent = getIntent();
@@ -43,28 +43,28 @@ public class Activity_PageList extends AppCompatActivity {
         switch (strNom){
             case "Halo CE":
                 titre.setText("Halo CE");
-                txt.setText(genererText(strNom));
+                txt.setText(genererText("Halo CE.txt"));
                 img.setBackgroundResource(R.drawable.h1);
                 break;
             case "Halo 2":
                 titre.setText("Halo 2");
-                txt.setText(genererText(strNom));
+                txt.setText(genererText("Halo 2.txt"));
                 img.setBackgroundResource(R.drawable.h2);
                 break;
             case "Halo 3":
                 titre.setText("Halo 3");
-                txt.setText(genererText(strNom));
+                txt.setText(genererText("Halo 3.txt"));
                 img.setBackgroundResource(R.drawable.h3);
                 break;
             case "Halo 4":
                 titre.setText("Halo 4");
-                txt.setText(genererText(strNom));
-                //img.setBackgroundResource(R.drawable.h4);
+                txt.setText(genererText("Halo 4.txt"));
+                img.setBackgroundResource(R.drawable.h4);
                 break;
             case "Halo 5":
                 titre.setText("Halo 5");
-                txt.setText(genererText(strNom));
-                //img.setBackgroundResource(R.drawable.h5);
+                txt.setText(genererText("Halo 5.txt"));
+                img.setBackgroundResource(R.drawable.h5);
                 break;
 
         }
